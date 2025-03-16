@@ -1,0 +1,5 @@
+ // Refresh the layer control
+        layerControl.remove(map);
+                layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, {
+                    position: 'topright' // Menetapkan posisi kontrol layer tetap di sebelah kanan atas
+                }).addTo(map);
